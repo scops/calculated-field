@@ -1,0 +1,32 @@
+{
+    "name": "scops/calculated-field",
+    "description": "A server side calculated field for Laravel Nova",
+    "keywords": [
+        "laravel",
+        "nova",
+        "field",
+        "calculated",
+        "server-side"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Codebykyle\\CalculatedField\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Scops\\CalculatedField\\FieldServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
