@@ -12487,7 +12487,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       this.calculating = true;
 
-      Nova.request().post("/codebykyle/calculated-field/calculate/" + this.resourceName + "/" + this.field.attribute, this.field_values).then(function (response) {
+      Nova.request().post("/scops/calculated-field/calculate/" + this.resourceName + "/" + this.field.attribute, this.field_values).then(function (response) {
         _this.value = response.data.value;
         _this.calculating = false;
       }).catch(function () {

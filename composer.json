@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Codebykyle\\CalculatedField\\": "src/"
+            "Scops\\CalculatedField\\": "src/"
         }
     },
     "extra": {
