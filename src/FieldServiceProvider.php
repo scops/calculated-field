@@ -16,11 +16,33 @@ class FieldServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->app->booted(function () {
+            $this->routes();
+        });
+
         Nova::serving(function (ServingNova $event) {
             Nova::script('calculated-field', __DIR__.'/../dist/js/field.js');
             Nova::style('calculated-field', __DIR__.'/../dist/css/field.css');
         });
     }
+
+    /**
+     * Register the component's routes.
+     *
+     * @return void
+     */
+    protected function routes()
+    {
+        if ($this->app->routesAreCached()) {
+            return;
+        }
+
+        Route::middleware(['nova'])
+                
+                ->prefix('scops/calculated-field')
+                ->group(__DIR__.'/../routes/api.php');
+    }
+
 
     /**
      * Register any application services.
@@ -29,13 +51,6 @@ class FieldServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        if ($this->app->routesAreCached()) {
-            return;
-        }
-
-        Route::middleware(['nova'])
-            ->namespace('Scops\CalculatedField\Http\Controllers')
-            ->prefix('scops/calculated-field')
-            ->group(__DIR__.'/../routes/api.php');
+       
     }
 }
