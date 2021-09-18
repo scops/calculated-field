@@ -297,6 +297,10 @@ export default {
       this.closeRelationModal()
       this.selectedResourceId = id
       this.getAvailableResources().then(() => this.selectInitialResource())
+      Nova.$emit(this.field.broadcastTo, {
+            field_name: this.field.attribute,
+            value: id
+        });
     },
   },
 

@@ -23,7 +23,23 @@ export default {
 
   props: ["resourceName", "resourceId", "field"],
 
+  created() {
+    Nova.$on(this.field.listensTo, this.messageReceived);
+    this.field_values["resourceId"] = parseInt(this.resourceId);
+  },
+
+  data: () => ({
+    calculating: false,
+    field_values: {}
+  }),
+
   methods: {
+
+    messageReceived(message) {
+      this.field_values[message.field_name] = message.value;
+      this.calculateValue();
+    },
+
     setFieldAndMessage(el) {
       const rawValue = el.target.value;
       let parsedValue = rawValue;
@@ -39,6 +55,30 @@ export default {
 
       this.value = parsedValue;
     },
+
+    calculateValue: _.debounce(function() {
+      this.calculating = true;
+
+      Nova.request()
+        .post(
+          `/scops/calculated-field/calculate/${this.resourceName}/${this.field.attribute}`,
+          this.field_values
+        )
+        .then(response => {
+          this.value = response.data.value;
+
+            // Broadcast if you need to
+            Nova.$emit(this.field.broadcastTo, {
+                field_name: this.field.attribute,
+                value: this.value
+            });
+
+          this.calculating = false;
+        })
+        .catch(() => {
+          this.calculating = false;
+        });
+    }, 500),
 
     /*
      * Set the initial, internal value for the field.

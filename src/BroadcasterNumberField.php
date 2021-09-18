@@ -2,6 +2,7 @@
 
 namespace Scops\CalculatedField;
 
+use Illuminate\Http\Request;
 use Laravel\Nova\Element;
 use Laravel\Nova\Fields\Number;
 
@@ -21,6 +22,18 @@ class BroadcasterNumberField extends Number
     public $type = 'number';
 
     /**
+     * The event this fields listens for
+     * @var string
+     */
+    protected $listensTo;
+
+    /**
+     * The function to call when input is detected
+     * @var \Closure
+     */
+    public $calculateFunction;
+
+    /**
      * BroadcasterField constructor.
      *
      * @param $name
@@ -35,6 +48,12 @@ class BroadcasterNumberField extends Number
             'type' => 'number',
             'broadcastTo' => 'broadcast-field-input'
         ]);
+
+        $this->listensTo = 'broadcast-field-input';
+
+        $this->calculateFunction = function ($values, Request $request) {
+            return collect($values)->values()->sum();
+        };
     }
 
     /**
@@ -72,6 +91,38 @@ class BroadcasterNumberField extends Number
         return $this->withMeta([
             'broadcastTo' => $broadcastChannel
         ]);
+    }
+
+    /**
+     * The channel that the client side component listens to
+     * @param $channel
+     * @return $this
+     */
+    public function listensTo($channel) {
+        $this->listensTo = $channel;
+        return $this;
+    }
+
+       /***
+     * The callback we want to call when the field has some input
+     *
+     * @param callable $calculateFunction
+     * @return $this
+     */
+    public function calculateWith(callable $calculateFunction) {
+        $this->calculateFunction = $calculateFunction;
+        return $this;
+    }
+
+    /***
+     * Serialize the field to JSON
+     * @return array
+     */
+    public function jsonSerialize()
+    {
+        return array_merge([
+            'listensTo' => $this->listensTo
+        ], parent::jsonSerialize());
     }
 
 }
