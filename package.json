@@ -11,10 +11,10 @@
     },
     "devDependencies": {
         "cross-env": "^5.0.0",
-        "laravel-mix": "^5.0.1",
-        "laravel-nova": "~1.0"
+        "laravel-mix": "^1.0"
     },
     "dependencies": {
+        "laravel-nova": "^1.12.3",
         "numeral": "^2.0.6",
         "vue": "^2.5.0"
     }

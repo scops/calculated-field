@@ -3,10 +3,9 @@
 namespace Scops\CalculatedField;
 
 use Laravel\Nova\Element;
-use Laravel\Nova\Fields\Currency;
-use Laravel\Nova\Fields\Field;
+use Laravel\Nova\Fields\Number;
 
-class BroadcasterField extends Field
+class BroadcasterNumberField extends Number
 {
     /**
      * The field's component.

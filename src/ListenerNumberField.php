@@ -3,11 +3,9 @@
 namespace Scops\CalculatedField;
 
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Currency;
-use Laravel\Nova\Fields\Field;
 use Laravel\Nova\Fields\Number;
 
-class ListenerField extends Field
+class ListenerNumberField extends Number
 {
     /**
      * The field's component.

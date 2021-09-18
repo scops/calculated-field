@@ -6,14 +6,14 @@ use Laravel\Nova\Element;
 use Laravel\Nova\Fields\Currency;
 use Laravel\Nova\Fields\Field;
 
-class BroadcasterField extends Field
+class BroadcasterCurrencyField extends Currency
 {
     /**
      * The field's component.
      *
      * @var string
      */
-    public $component = 'broadcaster-field';
+    public $component = 'broadcaster-currency-field';
 
     /**
      * The type of the field to show on the form

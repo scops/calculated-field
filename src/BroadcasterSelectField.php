@@ -5,8 +5,9 @@ namespace Scops\CalculatedField;
 use Laravel\Nova\Element;
 use Laravel\Nova\Fields\Currency;
 use Laravel\Nova\Fields\Field;
+use Laravel\Nova\Fields\Select;
 
-class BroadcasterField extends Field
+class BroadcasterSelectField extends Select
 {
     /**
      * The field's component.
