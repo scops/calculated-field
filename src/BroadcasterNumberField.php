@@ -12,7 +12,7 @@ class BroadcasterNumberField extends Number
      *
      * @var string
      */
-    public $component = 'broadcaster-field';
+    public $component = 'broadcaster-number-field';
 
     /**
      * The type of the field to show on the form

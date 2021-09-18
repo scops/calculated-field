@@ -12,7 +12,7 @@ class ListenerNumberField extends Number
      *
      * @var string
      */
-    public $component = 'listener-field';
+    public $component = 'listener-number-field';
 
     /**
      * The event this fields listens for
