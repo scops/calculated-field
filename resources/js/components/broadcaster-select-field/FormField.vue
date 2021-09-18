@@ -102,6 +102,11 @@ export default {
     selectOption(option) {
       this.selectedOption = option
       this.value = option.value
+      Nova.$emit(this.field.broadcastTo, {
+        field_name: this.field.attribute,
+        value: this.value
+      });
+
     },
 
     /**
@@ -111,7 +116,11 @@ export default {
       this.value = e.target.value
 
       if (this.field) {
-        Nova.$emit(this.field.attribute + '-change', this.value)
+        Nova.$emit(this.field.attribute + '-change', this.value);
+        Nova.$emit(this.field.broadcastTo, {
+          field_name: this.field.attribute,
+          value: this.value
+        });
       }
     },
   },
