@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -27533,1535 +27533,6 @@ return numeral;
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(4);
-module.exports = __webpack_require__(40);
-
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-Nova.booting(function (Vue, router, store) {
-    Vue.component('index-broadcaster-field', __webpack_require__(5));
-    Vue.component('detail-broadcaster-field', __webpack_require__(8));
-    Vue.component('form-broadcaster-field', __webpack_require__(11));
-
-    Vue.component('index-broadcaster-currency-field', __webpack_require__(14));
-    Vue.component('detail-broadcaster-currency-field', __webpack_require__(17));
-    Vue.component('form-broadcaster-currency-field', __webpack_require__(20));
-
-    Vue.component('index-listener-field', __webpack_require__(23));
-    Vue.component('detail-listener-field', __webpack_require__(26));
-    Vue.component('form-listener-field', __webpack_require__(29));
-});
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(6)
-/* template */
-var __vue_template__ = __webpack_require__(7)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/broadcaster-field/IndexField.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7a97a227", Component.options)
-  } else {
-    hotAPI.reload("data-v-7a97a227", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 6 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['resourceName', 'field']
-});
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("span", [_vm._v(_vm._s(_vm.field.value))])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7a97a227", module.exports)
-  }
-}
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(9)
-/* template */
-var __vue_template__ = __webpack_require__(10)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/broadcaster-field/DetailField.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-718e89da", Component.options)
-  } else {
-    hotAPI.reload("data-v-718e89da", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 9 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['resource', 'resourceName', 'resourceId', 'field']
-});
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("panel-item", { attrs: { field: _vm.field } })
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-718e89da", module.exports)
-  }
-}
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(12)
-/* template */
-var __vue_template__ = __webpack_require__(13)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/broadcaster-field/FormField.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-5c1e3907", Component.options)
-  } else {
-    hotAPI.reload("data-v-5c1e3907", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 12 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_nova__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_numeral__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_numeral___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_numeral__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  mixins: [__WEBPACK_IMPORTED_MODULE_0_laravel_nova__["FormField"], __WEBPACK_IMPORTED_MODULE_0_laravel_nova__["HandlesValidationErrors"]],
-
-  props: ["resourceName", "resourceId", "field"],
-
-  methods: {
-    setFieldAndMessage: function setFieldAndMessage(el) {
-      var rawValue = el.target.value;
-      var parsedValue = rawValue;
-
-      if (this.field.type === "number") {
-        parsedValue = Number(rawValue);
-      }
-
-      Nova.$emit(this.field.broadcastTo, {
-        field_name: this.field.attribute,
-        value: parsedValue
-      });
-
-      this.value = parsedValue;
-    },
-
-
-    /*
-     * Set the initial, internal value for the field.
-     */
-    setInitialValue: function setInitialValue() {
-      this.value = this.field.value || "";
-    },
-
-
-    /**
-     * Fill the given FormData object with the field's internal value.
-     */
-    fill: function fill(formData) {
-      formData.append(this.field.attribute, this.value || "");
-    },
-
-
-    /**
-     * Update the field's internal value.
-     */
-    handleChange: function handleChange(value) {
-      this.value = value;
-    }
-  },
-  filters: {
-    moneyFormat: function moneyFormat(number, format) {
-      if (!format) {
-        return number;
-      }
-      return __WEBPACK_IMPORTED_MODULE_1_numeral___default()(number).format(format);
-    }
-  }
-});
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "default-field",
-    { attrs: { field: _vm.field, errors: _vm.errors } },
-    [
-      _c("template", { slot: "field" }, [
-        _c("input", {
-          staticClass: "w-full form-control form-input form-input-bordered",
-          class: _vm.errorClasses,
-          attrs: {
-            id: _vm.field.name,
-            type: this.field.type,
-            placeholder: _vm.field.name
-          },
-          domProps: {
-            value: _vm._f("moneyFormat")(_vm.value, _vm.field.numberFormat)
-          },
-          on: { input: _vm.setFieldAndMessage }
-        })
-      ])
-    ],
-    2
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-5c1e3907", module.exports)
-  }
-}
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(15)
-/* template */
-var __vue_template__ = __webpack_require__(16)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/broadcaster-currency-field/IndexField.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-3fe5e1bf", Component.options)
-  } else {
-    hotAPI.reload("data-v-3fe5e1bf", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 15 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['resourceName', 'field']
-});
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("span", [_vm._v(_vm._s(_vm.field.value))])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-3fe5e1bf", module.exports)
-  }
-}
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(18)
-/* template */
-var __vue_template__ = __webpack_require__(19)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/broadcaster-currency-field/DetailField.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-56083d42", Component.options)
-  } else {
-    hotAPI.reload("data-v-56083d42", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 18 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['resource', 'resourceName', 'resourceId', 'field']
-});
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("panel-item", { attrs: { field: _vm.field } })
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-56083d42", module.exports)
-  }
-}
-
-/***/ }),
-/* 20 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(21)
-/* template */
-var __vue_template__ = __webpack_require__(22)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/broadcaster-currency-field/FormField.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-6abda66f", Component.options)
-  } else {
-    hotAPI.reload("data-v-6abda66f", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 21 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_nova__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_numeral__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_numeral___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_numeral__);
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  mixins: [__WEBPACK_IMPORTED_MODULE_0_laravel_nova__["FormField"], __WEBPACK_IMPORTED_MODULE_0_laravel_nova__["HandlesValidationErrors"]],
-
-  props: ["resourceName", "resourceId", "field"],
-
-  computed: {
-    defaultAttributes: function defaultAttributes() {
-      return {
-        type: 'number',
-        min: this.field.min,
-        max: this.field.max,
-        step: this.field.step,
-        pattern: this.field.pattern,
-        placeholder: this.field.placeholder || this.field.name,
-        class: this.errorClasses
-      };
-    },
-    extraAttributes: function extraAttributes() {
-      var attrs = this.field.extraAttributes;
-
-      return _extends({}, this.defaultAttributes, attrs);
-    }
-  },
-
-  methods: {
-    setFieldAndMessage: function setFieldAndMessage(el) {
-      var rawValue = el.target.value;
-      var parsedValue = rawValue;
-
-      if (this.field.type === "number") {
-        parsedValue = Number(rawValue);
-      }
-
-      Nova.$emit(this.field.broadcastTo, {
-        field_name: this.field.attribute,
-        value: parsedValue
-      });
-
-      this.value = parsedValue;
-    },
-
-
-    /*
-     * Set the initial, internal value for the field.
-     */
-    setInitialValue: function setInitialValue() {
-      this.value = this.field.value || "";
-    },
-
-
-    /**
-     * Fill the given FormData object with the field's internal value.
-     */
-    fill: function fill(formData) {
-      formData.append(this.field.attribute, this.value || "");
-    },
-
-
-    /**
-     * Update the field's internal value.
-     */
-    handleChange: function handleChange(value) {
-      this.value = value;
-    }
-  },
-  filters: {
-    moneyFormat: function moneyFormat(number, format) {
-      if (!format) {
-        return number;
-      }
-      return __WEBPACK_IMPORTED_MODULE_1_numeral___default()(number).format(format);
-    }
-  }
-});
-
-/***/ }),
-/* 22 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "default-field",
-    {
-      attrs: {
-        field: _vm.field,
-        errors: _vm.errors,
-        "show-help-text": _vm.showHelpText
-      }
-    },
-    [
-      _c("template", { slot: "field" }, [
-        _c(
-          "div",
-          { staticClass: "flex flex-wrap items-stretch w-full relative" },
-          [
-            _c("div", { staticClass: "flex -mr-px" }, [
-              _c(
-                "span",
-                {
-                  staticClass:
-                    "flex items-center leading-normal rounded rounded-r-none border border-r-0 border-60 px-3 whitespace-no-wrap bg-30 text-80 text-sm font-bold"
-                },
-                [
-                  _vm._v(
-                    "\n            " +
-                      _vm._s(_vm.field.currency) +
-                      "\n          "
-                  )
-                ]
-              )
-            ]),
-            _vm._v(" "),
-            _c(
-              "input",
-              _vm._b(
-                {
-                  staticClass:
-                    "flex-shrink flex-grow flex-auto\n          leading-normal\n          w-px\n          flex-1\n          rounded-l-none\n          form-control form-input form-input-bordered",
-                  class: _vm.errorClasses,
-                  attrs: {
-                    id: _vm.field.name,
-                    type: this.field.type,
-                    dusk: _vm.field.attribute,
-                    placeholder: _vm.field.name,
-                    disabled: _vm.isReadonly
-                  },
-                  domProps: {
-                    value: _vm._f("moneyFormat")(
-                      _vm.value,
-                      _vm.field.numberFormat
-                    )
-                  },
-                  on: { input: _vm.setFieldAndMessage }
-                },
-                "input",
-                _vm.extraAttributes,
-                false
-              )
-            )
-          ]
-        )
-      ])
-    ],
-    2
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6abda66f", module.exports)
-  }
-}
-
-/***/ }),
-/* 23 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(24)
-/* template */
-var __vue_template__ = __webpack_require__(25)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/listener-field/IndexField.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-11d44cdb", Component.options)
-  } else {
-    hotAPI.reload("data-v-11d44cdb", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 24 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-    props: ['resourceName', 'field']
-});
-
-/***/ }),
-/* 25 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("span", [_vm._v(_vm._s(_vm.field.value))])
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-11d44cdb", module.exports)
-  }
-}
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(27)
-/* template */
-var __vue_template__ = __webpack_require__(28)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = null
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/listener-field/DetailField.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-7c3194b4", Component.options)
-  } else {
-    hotAPI.reload("data-v-7c3194b4", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 27 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["resource", "resourceName", "resourceId", "field"]
-});
-
-/***/ }),
-/* 28 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("panel-item", { attrs: { field: _vm.field } })
-}
-var staticRenderFns = []
-render._withStripped = true
-module.exports = { render: render, staticRenderFns: staticRenderFns }
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-7c3194b4", module.exports)
-  }
-}
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(30)
-}
-var normalizeComponent = __webpack_require__(0)
-/* script */
-var __vue_script__ = __webpack_require__(35)
-/* template */
-var __vue_template__ = __webpack_require__(39)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/js/components/listener-field/FormField.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-fbf1305a", Component.options)
-  } else {
-    hotAPI.reload("data-v-fbf1305a", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(31);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(33)("608a827e", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fbf1305a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./FormField.vue", function() {
-     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fbf1305a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./FormField.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-/* 31 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(32)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n@-webkit-keyframes rotating {\nfrom {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n}\nto {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n.rotating {\n  -webkit-animation: rotating 2s linear infinite;\n          animation: rotating 2s linear infinite;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-/* 32 */
-/***/ (function(module, exports) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function(useSourceMap) {
-	var list = [];
-
-	// return the list of modules as css string
-	list.toString = function toString() {
-		return this.map(function (item) {
-			var content = cssWithMappingToString(item, useSourceMap);
-			if(item[2]) {
-				return "@media " + item[2] + "{" + content + "}";
-			} else {
-				return content;
-			}
-		}).join("");
-	};
-
-	// import a list of modules into the list
-	list.i = function(modules, mediaQuery) {
-		if(typeof modules === "string")
-			modules = [[null, modules, ""]];
-		var alreadyImportedModules = {};
-		for(var i = 0; i < this.length; i++) {
-			var id = this[i][0];
-			if(typeof id === "number")
-				alreadyImportedModules[id] = true;
-		}
-		for(i = 0; i < modules.length; i++) {
-			var item = modules[i];
-			// skip already imported module
-			// this implementation is not 100% perfect for weird media query combinations
-			//  when a module is imported multiple times with different media queries.
-			//  I hope this will never occur (Hey this way we have smaller bundles)
-			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
-				if(mediaQuery && !item[2]) {
-					item[2] = mediaQuery;
-				} else if(mediaQuery) {
-					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
-				}
-				list.push(item);
-			}
-		}
-	};
-	return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-	var content = item[1] || '';
-	var cssMapping = item[3];
-	if (!cssMapping) {
-		return content;
-	}
-
-	if (useSourceMap && typeof btoa === 'function') {
-		var sourceMapping = toComment(cssMapping);
-		var sourceURLs = cssMapping.sources.map(function (source) {
-			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
-		});
-
-		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-	}
-
-	return [content].join('\n');
-}
-
-// Adapted from convert-source-map (MIT)
-function toComment(sourceMap) {
-	// eslint-disable-next-line no-undef
-	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-
-	return '/*# ' + data + ' */';
-}
-
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-  Modified by Evan You @yyx990803
-*/
-
-var hasDocument = typeof document !== 'undefined'
-
-if (typeof DEBUG !== 'undefined' && DEBUG) {
-  if (!hasDocument) {
-    throw new Error(
-    'vue-style-loader cannot be used in a non-browser environment. ' +
-    "Use { target: 'node' } in your Webpack config to indicate a server-rendering environment."
-  ) }
-}
-
-var listToStyles = __webpack_require__(34)
-
-/*
-type StyleObject = {
-  id: number;
-  parts: Array<StyleObjectPart>
-}
-
-type StyleObjectPart = {
-  css: string;
-  media: string;
-  sourceMap: ?string
-}
-*/
-
-var stylesInDom = {/*
-  [id: number]: {
-    id: number,
-    refs: number,
-    parts: Array<(obj?: StyleObjectPart) => void>
-  }
-*/}
-
-var head = hasDocument && (document.head || document.getElementsByTagName('head')[0])
-var singletonElement = null
-var singletonCounter = 0
-var isProduction = false
-var noop = function () {}
-var options = null
-var ssrIdKey = 'data-vue-ssr-id'
-
-// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-// tags it will allow on a page
-var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\b/.test(navigator.userAgent.toLowerCase())
-
-module.exports = function (parentId, list, _isProduction, _options) {
-  isProduction = _isProduction
-
-  options = _options || {}
-
-  var styles = listToStyles(parentId, list)
-  addStylesToDom(styles)
-
-  return function update (newList) {
-    var mayRemove = []
-    for (var i = 0; i < styles.length; i++) {
-      var item = styles[i]
-      var domStyle = stylesInDom[item.id]
-      domStyle.refs--
-      mayRemove.push(domStyle)
-    }
-    if (newList) {
-      styles = listToStyles(parentId, newList)
-      addStylesToDom(styles)
-    } else {
-      styles = []
-    }
-    for (var i = 0; i < mayRemove.length; i++) {
-      var domStyle = mayRemove[i]
-      if (domStyle.refs === 0) {
-        for (var j = 0; j < domStyle.parts.length; j++) {
-          domStyle.parts[j]()
-        }
-        delete stylesInDom[domStyle.id]
-      }
-    }
-  }
-}
-
-function addStylesToDom (styles /* Array<StyleObject> */) {
-  for (var i = 0; i < styles.length; i++) {
-    var item = styles[i]
-    var domStyle = stylesInDom[item.id]
-    if (domStyle) {
-      domStyle.refs++
-      for (var j = 0; j < domStyle.parts.length; j++) {
-        domStyle.parts[j](item.parts[j])
-      }
-      for (; j < item.parts.length; j++) {
-        domStyle.parts.push(addStyle(item.parts[j]))
-      }
-      if (domStyle.parts.length > item.parts.length) {
-        domStyle.parts.length = item.parts.length
-      }
-    } else {
-      var parts = []
-      for (var j = 0; j < item.parts.length; j++) {
-        parts.push(addStyle(item.parts[j]))
-      }
-      stylesInDom[item.id] = { id: item.id, refs: 1, parts: parts }
-    }
-  }
-}
-
-function createStyleElement () {
-  var styleElement = document.createElement('style')
-  styleElement.type = 'text/css'
-  head.appendChild(styleElement)
-  return styleElement
-}
-
-function addStyle (obj /* StyleObjectPart */) {
-  var update, remove
-  var styleElement = document.querySelector('style[' + ssrIdKey + '~="' + obj.id + '"]')
-
-  if (styleElement) {
-    if (isProduction) {
-      // has SSR styles and in production mode.
-      // simply do nothing.
-      return noop
-    } else {
-      // has SSR styles but in dev mode.
-      // for some reason Chrome can't handle source map in server-rendered
-      // style tags - source maps in <style> only works if the style tag is
-      // created and inserted dynamically. So we remove the server rendered
-      // styles and inject new ones.
-      styleElement.parentNode.removeChild(styleElement)
-    }
-  }
-
-  if (isOldIE) {
-    // use singleton mode for IE9.
-    var styleIndex = singletonCounter++
-    styleElement = singletonElement || (singletonElement = createStyleElement())
-    update = applyToSingletonTag.bind(null, styleElement, styleIndex, false)
-    remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true)
-  } else {
-    // use multi-style-tag mode in all other cases
-    styleElement = createStyleElement()
-    update = applyToTag.bind(null, styleElement)
-    remove = function () {
-      styleElement.parentNode.removeChild(styleElement)
-    }
-  }
-
-  update(obj)
-
-  return function updateStyle (newObj /* StyleObjectPart */) {
-    if (newObj) {
-      if (newObj.css === obj.css &&
-          newObj.media === obj.media &&
-          newObj.sourceMap === obj.sourceMap) {
-        return
-      }
-      update(obj = newObj)
-    } else {
-      remove()
-    }
-  }
-}
-
-var replaceText = (function () {
-  var textStore = []
-
-  return function (index, replacement) {
-    textStore[index] = replacement
-    return textStore.filter(Boolean).join('\n')
-  }
-})()
-
-function applyToSingletonTag (styleElement, index, remove, obj) {
-  var css = remove ? '' : obj.css
-
-  if (styleElement.styleSheet) {
-    styleElement.styleSheet.cssText = replaceText(index, css)
-  } else {
-    var cssNode = document.createTextNode(css)
-    var childNodes = styleElement.childNodes
-    if (childNodes[index]) styleElement.removeChild(childNodes[index])
-    if (childNodes.length) {
-      styleElement.insertBefore(cssNode, childNodes[index])
-    } else {
-      styleElement.appendChild(cssNode)
-    }
-  }
-}
-
-function applyToTag (styleElement, obj) {
-  var css = obj.css
-  var media = obj.media
-  var sourceMap = obj.sourceMap
-
-  if (media) {
-    styleElement.setAttribute('media', media)
-  }
-  if (options.ssrId) {
-    styleElement.setAttribute(ssrIdKey, obj.id)
-  }
-
-  if (sourceMap) {
-    // https://developer.chrome.com/devtools/docs/javascript-debugging
-    // this makes source maps inside style tags work properly in Chrome
-    css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */'
-    // http://stackoverflow.com/a/26603875
-    css += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + ' */'
-  }
-
-  if (styleElement.styleSheet) {
-    styleElement.styleSheet.cssText = css
-  } else {
-    while (styleElement.firstChild) {
-      styleElement.removeChild(styleElement.firstChild)
-    }
-    styleElement.appendChild(document.createTextNode(css))
-  }
-}
-
-
-/***/ }),
-/* 34 */
-/***/ (function(module, exports) {
-
-/**
- * Translates the list format produced by css-loader into something
- * easier to manipulate.
- */
-module.exports = function listToStyles (parentId, list) {
-  var styles = []
-  var newStyles = {}
-  for (var i = 0; i < list.length; i++) {
-    var item = list[i]
-    var id = item[0]
-    var css = item[1]
-    var media = item[2]
-    var sourceMap = item[3]
-    var part = {
-      id: parentId + ':' + i,
-      css: css,
-      media: media,
-      sourceMap: sourceMap
-    }
-    if (!newStyles[id]) {
-      styles.push(newStyles[id] = { id: id, parts: [part] })
-    } else {
-      newStyles[id].parts.push(part)
-    }
-  }
-  return styles
-}
-
-
-/***/ }),
-/* 35 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova__ = __webpack_require__(1);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_nova__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lodash__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_numeral__ = __webpack_require__(2);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_numeral___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_numeral__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-
-
-
-
-
-/* harmony default export */ __webpack_exports__["default"] = ({
-  mixins: [__WEBPACK_IMPORTED_MODULE_0_laravel_nova__["FormField"], __WEBPACK_IMPORTED_MODULE_0_laravel_nova__["HandlesValidationErrors"]],
-
-  props: ["resourceName", "resourceId", "field"],
-
-  created: function created() {
-    Nova.$on(this.field.listensTo, this.messageReceived);
-    this.field_values["resourceId"] = parseInt(this.resourceId);
-  },
-
-
-  data: function data() {
-    return {
-      calculating: false,
-      field_values: {}
-    };
-  },
-
-  methods: {
-    messageReceived: function messageReceived(message) {
-      this.field_values[message.field_name] = message.value;
-      this.calculateValue();
-    },
-    setFieldAndMessage: function setFieldAndMessage(el) {
-      var rawValue = el.target.value;
-      var parsedValue = rawValue;
-
-      if (this.field.type === "number") {
-        parsedValue = Number(rawValue);
-      }
-
-      Nova.$emit(this.field.broadcastTo, {
-        field_name: this.field.attribute,
-        value: parsedValue
-      });
-
-      this.value = parsedValue;
-    },
-
-
-    calculateValue: __WEBPACK_IMPORTED_MODULE_1_lodash___default.a.debounce(function () {
-      var _this = this;
-
-      this.calculating = true;
-
-      Nova.request().post("/scops/calculated-field/calculate/" + this.resourceName + "/" + this.field.attribute, this.field_values).then(function (response) {
-        _this.value = response.data.value;
-        _this.calculating = false;
-      }).catch(function () {
-        _this.calculating = false;
-      });
-    }, 500),
-
-    /*
-     * Set the initial, internal value for the field.
-     */
-    setInitialValue: function setInitialValue() {
-      this.value = this.field.value || "";
-    },
-
-
-    /**
-     * Fill the given FormData object with the field's internal value.
-     */
-    fill: function fill(formData) {
-      formData.append(this.field.attribute, this.value || "");
-    },
-
-
-    /**
-     * Update the field's internal value.
-     */
-    handleChange: function handleChange(value) {
-      this.value = value;
-    }
-  },
-  filters: {
-    moneyFormat: function moneyFormat(number, format) {
-      if (!format) {
-        return number;
-      }
-      return __WEBPACK_IMPORTED_MODULE_2_numeral___default()(number).format(format);
-    }
-  }
-});
-
-/***/ }),
-/* 36 */
-/***/ (function(module, exports, __webpack_require__) {
-
 /* WEBPACK VAR INJECTION */(function(global, module) {var __WEBPACK_AMD_DEFINE_RESULT__;/**
  * @license
  * Lodash <https://lodash.com/>
@@ -46273,10 +44744,2020 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   }
 }.call(this));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(37), __webpack_require__(38)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(38), __webpack_require__(39)(module)))
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(5);
+module.exports = __webpack_require__(56);
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+Nova.booting(function (Vue, router, store) {
+    Vue.component('index-broadcaster-field', __webpack_require__(6));
+    Vue.component('detail-broadcaster-field', __webpack_require__(9));
+    Vue.component('form-broadcaster-field', __webpack_require__(12));
+
+    Vue.component('index-broadcaster-currency-field', __webpack_require__(15));
+    Vue.component('detail-broadcaster-currency-field', __webpack_require__(18));
+    Vue.component('form-broadcaster-currency-field', __webpack_require__(21));
+
+    Vue.component('index-broadcaster-number-field', __webpack_require__(24));
+    Vue.component('detail-broadcaster-number-field', __webpack_require__(27));
+    Vue.component('form-broadcaster-number-field', __webpack_require__(30));
+
+    Vue.component('form-broadcaster-select-field', __webpack_require__(33));
+
+    Vue.component('form-broadcaster-belongsto-field', __webpack_require__(36));
+
+    Vue.component('index-listener-field', __webpack_require__(42));
+    Vue.component('detail-listener-field', __webpack_require__(45));
+    Vue.component('form-listener-field', __webpack_require__(48));
+});
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(7)
+/* template */
+var __vue_template__ = __webpack_require__(8)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/broadcaster-field/IndexField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7a97a227", Component.options)
+  } else {
+    hotAPI.reload("data-v-7a97a227", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['resourceName', 'field']
+});
+
+/***/ }),
+/* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("span", [_vm._v(_vm._s(_vm.field.value))])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7a97a227", module.exports)
+  }
+}
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(10)
+/* template */
+var __vue_template__ = __webpack_require__(11)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/broadcaster-field/DetailField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-718e89da", Component.options)
+  } else {
+    hotAPI.reload("data-v-718e89da", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 10 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['resource', 'resourceName', 'resourceId', 'field']
+});
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("panel-item", { attrs: { field: _vm.field } })
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-718e89da", module.exports)
+  }
+}
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(13)
+/* template */
+var __vue_template__ = __webpack_require__(14)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/broadcaster-field/FormField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5c1e3907", Component.options)
+  } else {
+    hotAPI.reload("data-v-5c1e3907", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_nova__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_numeral__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_numeral___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_numeral__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mixins: [__WEBPACK_IMPORTED_MODULE_0_laravel_nova__["FormField"], __WEBPACK_IMPORTED_MODULE_0_laravel_nova__["HandlesValidationErrors"]],
+
+  props: ["resourceName", "resourceId", "field"],
+
+  methods: {
+    setFieldAndMessage: function setFieldAndMessage(el) {
+      var rawValue = el.target.value;
+      var parsedValue = rawValue;
+
+      if (this.field.type === "number") {
+        parsedValue = Number(rawValue);
+      }
+
+      Nova.$emit(this.field.broadcastTo, {
+        field_name: this.field.attribute,
+        value: parsedValue
+      });
+
+      this.value = parsedValue;
+    },
+
+
+    /*
+     * Set the initial, internal value for the field.
+     */
+    setInitialValue: function setInitialValue() {
+      this.value = this.field.value || "";
+    },
+
+
+    /**
+     * Fill the given FormData object with the field's internal value.
+     */
+    fill: function fill(formData) {
+      formData.append(this.field.attribute, this.value || "");
+    },
+
+
+    /**
+     * Update the field's internal value.
+     */
+    handleChange: function handleChange(value) {
+      this.value = value;
+    }
+  },
+  filters: {
+    moneyFormat: function moneyFormat(number, format) {
+      if (!format) {
+        return number;
+      }
+      return __WEBPACK_IMPORTED_MODULE_1_numeral___default()(number).format(format);
+    }
+  }
+});
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "default-field",
+    { attrs: { field: _vm.field, errors: _vm.errors } },
+    [
+      _c("template", { slot: "field" }, [
+        _c("input", {
+          staticClass: "w-full form-control form-input form-input-bordered",
+          class: _vm.errorClasses,
+          attrs: {
+            id: _vm.field.name,
+            type: this.field.type,
+            placeholder: _vm.field.name
+          },
+          domProps: {
+            value: _vm._f("moneyFormat")(_vm.value, _vm.field.numberFormat)
+          },
+          on: { input: _vm.setFieldAndMessage }
+        })
+      ])
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-5c1e3907", module.exports)
+  }
+}
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(16)
+/* template */
+var __vue_template__ = __webpack_require__(17)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/broadcaster-currency-field/IndexField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3fe5e1bf", Component.options)
+  } else {
+    hotAPI.reload("data-v-3fe5e1bf", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['resourceName', 'field']
+});
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("span", [_vm._v(_vm._s(_vm.field.value))])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-3fe5e1bf", module.exports)
+  }
+}
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(19)
+/* template */
+var __vue_template__ = __webpack_require__(20)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/broadcaster-currency-field/DetailField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-56083d42", Component.options)
+  } else {
+    hotAPI.reload("data-v-56083d42", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 19 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['resource', 'resourceName', 'resourceId', 'field']
+});
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("panel-item", { attrs: { field: _vm.field } })
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-56083d42", module.exports)
+  }
+}
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(22)
+/* template */
+var __vue_template__ = __webpack_require__(23)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/broadcaster-currency-field/FormField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-6abda66f", Component.options)
+  } else {
+    hotAPI.reload("data-v-6abda66f", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 22 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_nova__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_numeral__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_numeral___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_numeral__);
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mixins: [__WEBPACK_IMPORTED_MODULE_0_laravel_nova__["FormField"], __WEBPACK_IMPORTED_MODULE_0_laravel_nova__["HandlesValidationErrors"]],
+
+  props: ["resourceName", "resourceId", "field"],
+
+  created: function created() {
+    Nova.$on(this.field.listensTo, this.messageReceived);
+    this.field_values["resourceId"] = parseInt(this.resourceId);
+  },
+
+
+  data: function data() {
+    return {
+      calculating: false,
+      field_values: {}
+    };
+  },
+
+  computed: {
+    defaultAttributes: function defaultAttributes() {
+      return {
+        type: 'number',
+        min: this.field.min,
+        max: this.field.max,
+        step: this.field.step,
+        pattern: this.field.pattern,
+        placeholder: this.field.placeholder || this.field.name,
+        class: this.errorClasses
+      };
+    },
+    extraAttributes: function extraAttributes() {
+      var attrs = this.field.extraAttributes;
+
+      return _extends({}, this.defaultAttributes, attrs);
+    }
+  },
+
+  methods: {
+    messageReceived: function messageReceived(message) {
+      this.field_values[message.field_name] = message.value;
+      this.calculateValue();
+    },
+    setFieldAndMessage: function setFieldAndMessage(el) {
+      var rawValue = el.target.value;
+      var parsedValue = rawValue;
+
+      if (this.field.type === "number") {
+        parsedValue = Number(rawValue);
+      }
+
+      Nova.$emit(this.field.broadcastTo, {
+        field_name: this.field.attribute,
+        value: parsedValue
+      });
+
+      this.value = parsedValue;
+    },
+
+
+    calculateValue: _.debounce(function () {
+      var _this = this;
+
+      this.calculating = true;
+
+      Nova.request().post("/scops/calculated-field/calculate/" + this.resourceName + "/" + this.field.attribute, this.field_values).then(function (response) {
+        _this.value = response.data.value;
+
+        // Broadcast if you need to
+        Nova.$emit(_this.field.broadcastTo, {
+          field_name: _this.field.attribute,
+          value: _this.value
+        });
+
+        _this.calculating = false;
+      }).catch(function () {
+        _this.calculating = false;
+      });
+    }, 500),
+    /*
+     * Set the initial, internal value for the field.
+     */
+    setInitialValue: function setInitialValue() {
+      this.value = this.field.value || "";
+    },
+
+
+    /**
+     * Fill the given FormData object with the field's internal value.
+     */
+    fill: function fill(formData) {
+      formData.append(this.field.attribute, this.value || "");
+    },
+
+
+    /**
+     * Update the field's internal value.
+     */
+    handleChange: function handleChange(value) {
+      this.value = value;
+    }
+  },
+  filters: {
+    moneyFormat: function moneyFormat(number, format) {
+      if (!format) {
+        return number;
+      }
+      return __WEBPACK_IMPORTED_MODULE_1_numeral___default()(number).format(format);
+    }
+  }
+});
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "default-field",
+    {
+      attrs: {
+        field: _vm.field,
+        errors: _vm.errors,
+        "show-help-text": _vm.showHelpText
+      }
+    },
+    [
+      _c("template", { slot: "field" }, [
+        _c(
+          "div",
+          { staticClass: "flex flex-wrap items-stretch w-full relative" },
+          [
+            _c("div", { staticClass: "flex -mr-px" }, [
+              _c(
+                "span",
+                {
+                  staticClass:
+                    "flex items-center leading-normal rounded rounded-r-none border border-r-0 border-60 px-3 whitespace-no-wrap bg-30 text-80 text-sm font-bold"
+                },
+                [
+                  _vm._v(
+                    "\n            " +
+                      _vm._s(_vm.field.currency) +
+                      "\n          "
+                  )
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c(
+              "input",
+              _vm._b(
+                {
+                  staticClass:
+                    "flex-shrink flex-grow flex-auto\n          leading-normal\n          w-px\n          flex-1\n          rounded-l-none\n          form-control form-input form-input-bordered",
+                  class: _vm.errorClasses,
+                  attrs: {
+                    id: _vm.field.name,
+                    type: this.field.type,
+                    dusk: _vm.field.attribute,
+                    placeholder: _vm.field.name,
+                    disabled: _vm.isReadonly
+                  },
+                  domProps: {
+                    value: _vm._f("moneyFormat")(
+                      _vm.value,
+                      _vm.field.numberFormat
+                    )
+                  },
+                  on: { input: _vm.setFieldAndMessage }
+                },
+                "input",
+                _vm.extraAttributes,
+                false
+              )
+            )
+          ]
+        )
+      ])
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6abda66f", module.exports)
+  }
+}
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(25)
+/* template */
+var __vue_template__ = __webpack_require__(26)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/broadcaster-number-field/IndexField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7cb4c507", Component.options)
+  } else {
+    hotAPI.reload("data-v-7cb4c507", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 25 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['resourceName', 'field']
+});
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("span", [_vm._v(_vm._s(_vm.field.value))])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7cb4c507", module.exports)
+  }
+}
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(28)
+/* template */
+var __vue_template__ = __webpack_require__(29)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/broadcaster-number-field/DetailField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-99d47a0c", Component.options)
+  } else {
+    hotAPI.reload("data-v-99d47a0c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 28 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['resource', 'resourceName', 'resourceId', 'field']
+});
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("panel-item", { attrs: { field: _vm.field } })
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-99d47a0c", module.exports)
+  }
+}
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(31)
+/* template */
+var __vue_template__ = __webpack_require__(32)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/broadcaster-number-field/FormField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-22613a27", Component.options)
+  } else {
+    hotAPI.reload("data-v-22613a27", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 31 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_nova__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_numeral__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_numeral___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_numeral__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mixins: [__WEBPACK_IMPORTED_MODULE_0_laravel_nova__["FormField"], __WEBPACK_IMPORTED_MODULE_0_laravel_nova__["HandlesValidationErrors"]],
+
+  props: ["resourceName", "resourceId", "field"],
+
+  created: function created() {
+    Nova.$on(this.field.listensTo, this.messageReceived);
+    this.field_values["resourceId"] = parseInt(this.resourceId);
+  },
+
+
+  data: function data() {
+    return {
+      calculating: false,
+      field_values: {}
+    };
+  },
+
+  methods: {
+    messageReceived: function messageReceived(message) {
+      this.field_values[message.field_name] = message.value;
+      this.calculateValue();
+    },
+    setFieldAndMessage: function setFieldAndMessage(el) {
+      var rawValue = el.target.value;
+      var parsedValue = rawValue;
+
+      if (this.field.type === "number") {
+        parsedValue = Number(rawValue);
+      }
+
+      Nova.$emit(this.field.broadcastTo, {
+        field_name: this.field.attribute,
+        value: parsedValue
+      });
+
+      this.value = parsedValue;
+    },
+
+
+    calculateValue: _.debounce(function () {
+      var _this = this;
+
+      this.calculating = true;
+
+      Nova.request().post("/scops/calculated-field/calculate/" + this.resourceName + "/" + this.field.attribute, this.field_values).then(function (response) {
+        _this.value = response.data.value;
+
+        // Broadcast if you need to
+        Nova.$emit(_this.field.broadcastTo, {
+          field_name: _this.field.attribute,
+          value: _this.value
+        });
+
+        _this.calculating = false;
+      }).catch(function () {
+        _this.calculating = false;
+      });
+    }, 500),
+
+    /*
+     * Set the initial, internal value for the field.
+     */
+    setInitialValue: function setInitialValue() {
+      this.value = this.field.value || "";
+    },
+
+
+    /**
+     * Fill the given FormData object with the field's internal value.
+     */
+    fill: function fill(formData) {
+      formData.append(this.field.attribute, this.value || "");
+    },
+
+
+    /**
+     * Update the field's internal value.
+     */
+    handleChange: function handleChange(value) {
+      this.value = value;
+    }
+  },
+  filters: {
+    moneyFormat: function moneyFormat(number, format) {
+      if (!format) {
+        return number;
+      }
+      return __WEBPACK_IMPORTED_MODULE_1_numeral___default()(number).format(format);
+    }
+  }
+});
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "default-field",
+    { attrs: { field: _vm.field, errors: _vm.errors } },
+    [
+      _c("template", { slot: "field" }, [
+        _c("input", {
+          staticClass: "w-full form-control form-input form-input-bordered",
+          class: _vm.errorClasses,
+          attrs: {
+            id: _vm.field.name,
+            type: this.field.type,
+            placeholder: _vm.field.name
+          },
+          domProps: {
+            value: _vm._f("moneyFormat")(_vm.value, _vm.field.numberFormat)
+          },
+          on: { input: _vm.setFieldAndMessage }
+        })
+      ])
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-22613a27", module.exports)
+  }
+}
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(34)
+/* template */
+var __vue_template__ = __webpack_require__(35)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/broadcaster-select-field/FormField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5156874c", Component.options)
+  } else {
+    hotAPI.reload("data-v-5156874c", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 34 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_nova__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mixins: [__WEBPACK_IMPORTED_MODULE_0_laravel_nova__["HandlesValidationErrors"], __WEBPACK_IMPORTED_MODULE_0_laravel_nova__["FormField"]],
+
+  data: function data() {
+    return {
+      selectedOption: null,
+      search: ''
+    };
+  },
+
+  created: function created() {
+    var _this = this;
+
+    if (this.field.value && this.isSearchable) {
+      this.selectedOption = _(this.field.options).find(function (v) {
+        return v.value == _this.field.value;
+      });
+    }
+  },
+
+
+  methods: {
+    /**
+     * Provide a function that fills a passed FormData object with the
+     * field's internal value attribute. Here we are forcing there to be a
+     * value sent to the server instead of the default behavior of
+     * `this.value || ''` to avoid loose-comparison issues if the keys
+     * are truthy or falsey
+     */
+    fill: function fill(formData) {
+      formData.append(this.field.attribute, this.value);
+    },
+
+
+    /**
+     * Set the search string to be used to filter the select field.
+     */
+    performSearch: function performSearch(event) {
+      this.search = event;
+    },
+
+
+    /**
+     * Clear the current selection for the field.
+     */
+    clearSelection: function clearSelection() {
+      this.selectedOption = '';
+      this.value = '';
+    },
+
+
+    /**
+     * Select the given option.
+     */
+    selectOption: function selectOption(option) {
+      this.selectedOption = option;
+      this.value = option.value;
+      Nova.$emit(this.field.broadcastTo, {
+        field_name: this.field.attribute,
+        value: this.value
+      });
+    },
+
+
+    /**
+     * Handle the selection change event.
+     */
+    handleChange: function handleChange(e) {
+      this.value = e.target.value;
+
+      if (this.field) {
+        Nova.$emit(this.field.attribute + '-change', this.value);
+        Nova.$emit(this.field.broadcastTo, {
+          field_name: this.field.attribute,
+          value: this.value
+        });
+      }
+    }
+  },
+
+  computed: {
+    /**
+     * Determine if the related resources is searchable
+     */
+    isSearchable: function isSearchable() {
+      return this.field.searchable;
+    },
+
+
+    /**
+     * Return the field options filtered by the search string.
+     */
+    filteredOptions: function filteredOptions() {
+      var _this2 = this;
+
+      return this.field.options.filter(function (option) {
+        return option.label.toLowerCase().indexOf(_this2.search.toLowerCase()) > -1;
+      });
+    },
+
+
+    /**
+     * Return the placeholder text for the field.
+     */
+    placeholder: function placeholder() {
+      return this.field.placeholder || this.__('Choose an option');
+    }
+  }
+});
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "default-field",
+    {
+      attrs: {
+        field: _vm.field,
+        errors: _vm.errors,
+        "show-help-text": _vm.showHelpText
+      }
+    },
+    [
+      _c(
+        "template",
+        { slot: "field" },
+        [
+          !_vm.isReadonly && _vm.isSearchable
+            ? _c(
+                "search-input",
+                {
+                  staticClass: "w-full",
+                  attrs: {
+                    error: _vm.hasError,
+                    value: _vm.selectedOption,
+                    data: _vm.filteredOptions,
+                    clearable: _vm.field.nullable,
+                    trackBy: "value"
+                  },
+                  on: {
+                    input: _vm.performSearch,
+                    clear: _vm.clearSelection,
+                    selected: _vm.selectOption
+                  },
+                  scopedSlots: _vm._u(
+                    [
+                      {
+                        key: "option",
+                        fn: function(ref) {
+                          var option = ref.option
+                          var selected = ref.selected
+                          return _c(
+                            "div",
+                            {
+                              staticClass:
+                                "flex items-center text-sm font-semibold leading-5 text-90",
+                              class: { "text-white": selected }
+                            },
+                            [
+                              _vm._v(
+                                "\n        " + _vm._s(option.label) + "\n      "
+                              )
+                            ]
+                          )
+                        }
+                      }
+                    ],
+                    null,
+                    false,
+                    2952642975
+                  )
+                },
+                [
+                  _vm.selectedOption
+                    ? _c(
+                        "div",
+                        {
+                          staticClass: "flex items-center",
+                          attrs: { slot: "default" },
+                          slot: "default"
+                        },
+                        [
+                          _vm._v(
+                            "\n        " +
+                              _vm._s(_vm.selectedOption.label) +
+                              "\n      "
+                          )
+                        ]
+                      )
+                    : _vm._e()
+                ]
+              )
+            : _c(
+                "select-control",
+                {
+                  staticClass: "w-full form-control form-select",
+                  class: _vm.errorClasses,
+                  attrs: {
+                    id: _vm.field.attribute,
+                    dusk: _vm.field.attribute,
+                    value: this.value,
+                    options: _vm.field.options,
+                    disabled: _vm.isReadonly
+                  },
+                  on: { change: _vm.handleChange }
+                },
+                [
+                  _c(
+                    "option",
+                    {
+                      attrs: {
+                        value: "",
+                        selected: "",
+                        disabled: !_vm.field.nullable
+                      }
+                    },
+                    [
+                      _vm._v(
+                        "\n        " + _vm._s(_vm.placeholder) + "\n      "
+                      )
+                    ]
+                  )
+                ]
+              )
+        ],
+        1
+      )
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-5156874c", module.exports)
+  }
+}
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(37)
+/* template */
+var __vue_template__ = __webpack_require__(41)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/broadcaster-belongsto-field/FormField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-68558949", Component.options)
+  } else {
+    hotAPI.reload("data-v-68558949", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
 
 /***/ }),
 /* 37 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__storage_BelongsToFieldStorage__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_laravel_nova__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_laravel_nova___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_laravel_nova__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mixins: [__WEBPACK_IMPORTED_MODULE_2_laravel_nova__["TogglesTrashed"], __WEBPACK_IMPORTED_MODULE_2_laravel_nova__["PerformsSearches"], __WEBPACK_IMPORTED_MODULE_2_laravel_nova__["HandlesValidationErrors"], __WEBPACK_IMPORTED_MODULE_2_laravel_nova__["FormField"]],
+
+  props: {
+    resourceId: {}
+  },
+
+  data: function data() {
+    return {
+      availableResources: [],
+      initializingWithExistingResource: false,
+      selectedResource: null,
+      selectedResourceId: null,
+      softDeletes: false,
+      withTrashed: false,
+      search: '',
+      relationModalOpen: false
+    };
+  },
+
+  /**
+   * Mount the component.
+   */
+  mounted: function mounted() {
+    this.initializeComponent();
+  },
+
+
+  methods: {
+    initializeComponent: function initializeComponent() {
+      var _this = this;
+
+      this.withTrashed = false;
+
+      this.selectedResourceId = this.field.value;
+
+      // If a user is editing an existing resource with this relation
+      // we'll have a belongsToId on the field, and we should prefill
+      // that resource in this field
+      if (this.editingExistingResource) {
+        this.initializingWithExistingResource = true;
+        this.selectedResourceId = this.field.belongsToId;
+      }
+
+      // If the user is creating this resource via a related resource's index
+      // page we'll have a viaResource and viaResourceId in the params and
+      // should prefill the resource in this field with that information
+      if (this.creatingViaRelatedResource) {
+        this.initializingWithExistingResource = true;
+        this.selectedResourceId = this.viaResourceId;
+      }
+
+      if (this.shouldSelectInitialResource && !this.isSearchable) {
+        // If we should select the initial resource but the field is not
+        // searchable we should load all of the available resources into the
+        // field first and select the initial option.
+        this.initializingWithExistingResource = false;
+        this.getAvailableResources().then(function () {
+          return _this.selectInitialResource();
+        });
+      } else if (this.shouldSelectInitialResource && this.isSearchable) {
+        // If we should select the initial resource and the field is
+        // searchable, we won't load all the resources but we will select
+        // the initial option.
+        this.getAvailableResources().then(function () {
+          return _this.selectInitialResource();
+        });
+      } else if (!this.shouldSelectInitialResource && !this.isSearchable) {
+        // If we don't need to select an initial resource because the user
+        // came to create a resource directly and there's no parent resource,
+        // and the field is searchable we'll just load all of the resources.
+        this.getAvailableResources();
+      }
+
+      this.determineIfSoftDeletes();
+
+      this.field.fill = this.fill;
+    },
+
+
+    /**
+     * Select a resource using the <select> control
+     */
+    selectResourceFromSelectControl: function selectResourceFromSelectControl(e) {
+      this.selectedResourceId = e.target.value;
+      this.selectInitialResource();
+
+      if (this.field) {
+        Nova.$emit(this.field.attribute + '-change', this.selectedResourceId);
+        Nova.$emit(this.field.broadcastTo, {
+          field_name: this.field.attribute,
+          value: this.selectedResourceId
+        });
+      }
+    },
+
+
+    /**
+     * Fill the forms formData with details from this field
+     */
+    fill: function fill(formData) {
+      formData.append(this.field.attribute, this.selectedResource ? this.selectedResource.value : '');
+
+      formData.append(this.field.attribute + '_trashed', this.withTrashed);
+    },
+
+
+    /**
+     * Get the resources that may be related to this resource.
+     */
+    getAvailableResources: function getAvailableResources() {
+      var _this2 = this;
+
+      return __WEBPACK_IMPORTED_MODULE_1__storage_BelongsToFieldStorage__["a" /* default */].fetchAvailableResources(this.resourceName, this.field.attribute, this.queryParams).then(function (_ref) {
+        var _ref$data = _ref.data,
+            resources = _ref$data.resources,
+            softDeletes = _ref$data.softDeletes,
+            withTrashed = _ref$data.withTrashed;
+
+        if (_this2.initializingWithExistingResource || !_this2.isSearchable) {
+          _this2.withTrashed = withTrashed;
+        }
+
+        // Turn off initializing the existing resource after the first time
+        _this2.initializingWithExistingResource = false;
+        _this2.availableResources = resources;
+        _this2.softDeletes = softDeletes;
+      });
+    },
+
+
+    /**
+     * Determine if the relatd resource is soft deleting.
+     */
+    determineIfSoftDeletes: function determineIfSoftDeletes() {
+      var _this3 = this;
+
+      return __WEBPACK_IMPORTED_MODULE_1__storage_BelongsToFieldStorage__["a" /* default */].determineIfSoftDeletes(this.field.resourceName).then(function (response) {
+        _this3.softDeletes = response.data.softDeletes;
+      });
+    },
+
+
+    /**
+     * Determine if the given value is numeric.
+     */
+    isNumeric: function isNumeric(value) {
+      return !isNaN(parseFloat(value)) && isFinite(value);
+    },
+
+
+    /**
+     * Select the initial selected resource
+     */
+    selectInitialResource: function selectInitialResource() {
+      var _this4 = this;
+
+      this.selectedResource = __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.find(this.availableResources, function (r) {
+        return r.value == _this4.selectedResourceId;
+      });
+    },
+
+
+    /**
+     * Toggle the trashed state of the search
+     */
+    toggleWithTrashed: function toggleWithTrashed() {
+      this.withTrashed = !this.withTrashed;
+
+      // Reload the data if the component doesn't support searching
+      if (!this.isSearchable) {
+        this.getAvailableResources();
+      }
+    },
+    openRelationModal: function openRelationModal() {
+      this.relationModalOpen = true;
+    },
+    closeRelationModal: function closeRelationModal() {
+      this.relationModalOpen = false;
+    },
+    handleSetResource: function handleSetResource(_ref2) {
+      var _this5 = this;
+
+      var id = _ref2.id;
+
+      this.closeRelationModal();
+      this.selectedResourceId = id;
+      this.getAvailableResources().then(function () {
+        return _this5.selectInitialResource();
+      });
+      Nova.$emit(this.field.broadcastTo, {
+        field_name: this.field.attribute,
+        value: id
+      });
+    }
+  },
+
+  computed: {
+    /**
+     * Determine if we are editing and existing resource
+     */
+    editingExistingResource: function editingExistingResource() {
+      return Boolean(this.field.belongsToId);
+    },
+
+
+    /**
+     * Determine if we are creating a new resource via a parent relation
+     */
+    creatingViaRelatedResource: function creatingViaRelatedResource() {
+      return this.viaResource == this.field.resourceName && this.field.reverse && this.viaResourceId;
+    },
+
+
+    /**
+     * Determine if we should select an initial resource when mounting this field
+     */
+    shouldSelectInitialResource: function shouldSelectInitialResource() {
+      return Boolean(this.editingExistingResource || this.creatingViaRelatedResource || this.field.value);
+    },
+
+
+    /**
+     * Determine if the related resources is searchable
+     */
+    isSearchable: function isSearchable() {
+      return this.field.searchable;
+    },
+
+
+    /**
+     * Get the query params for getting available resources
+     */
+    queryParams: function queryParams() {
+      return {
+        params: {
+          current: this.selectedResourceId,
+          first: this.initializingWithExistingResource,
+          search: this.search,
+          withTrashed: this.withTrashed,
+          resourceId: this.resourceId,
+          viaResource: this.viaResource,
+          viaResourceId: this.viaResourceId,
+          viaRelationship: this.viaRelationship
+        }
+      };
+    },
+    isLocked: function isLocked() {
+      return this.viaResource == this.field.resourceName && this.field.reverse;
+    },
+    isReadonly: function isReadonly() {
+      return this.field.readonly || __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.get(this.field, 'extraAttributes.readonly');
+    },
+    shouldShowTrashed: function shouldShowTrashed() {
+      return this.softDeletes && !this.isLocked && !this.isReadonly && this.field.displaysWithTrashed;
+    },
+    authorizedToCreate: function authorizedToCreate() {
+      var _this6 = this;
+
+      return __WEBPACK_IMPORTED_MODULE_0_lodash___default.a.find(Nova.config.resources, function (resource) {
+        return resource.uriKey == _this6.field.resourceName;
+      }).authorizedToCreate;
+    },
+    canShowNewRelationModal: function canShowNewRelationModal() {
+      return this.field.showCreateRelationButton && !this.shownViaNewRelationModal && !this.isLocked && !this.isReadonly && this.authorizedToCreate;
+    },
+
+
+    /**
+     * Return the placeholder text for the field.
+     */
+    placeholder: function placeholder() {
+      return this.field.placeholder || this.__('—');
+    }
+  }
+});
+
+/***/ }),
+/* 38 */
 /***/ (function(module, exports) {
 
 var g;
@@ -46303,7 +46784,7 @@ module.exports = g;
 
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -46331,7 +46812,1037 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 39 */
+/* 40 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+    fetchAvailableResources: function fetchAvailableResources(resourceName, fieldAttribute, params) {
+        return Nova.request().get("/nova-api/" + resourceName + "/associatable/" + fieldAttribute, params);
+    },
+    determineIfSoftDeletes: function determineIfSoftDeletes(resourceName) {
+        return Nova.request().get("/nova-api/" + resourceName + "/soft-deletes");
+    }
+});
+
+/***/ }),
+/* 41 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "default-field",
+    {
+      attrs: {
+        field: _vm.field,
+        errors: _vm.errors,
+        "show-help-text": _vm.showHelpText
+      }
+    },
+    [
+      _c(
+        "template",
+        { slot: "field" },
+        [
+          _c(
+            "div",
+            { staticClass: "flex items-center" },
+            [
+              _vm.isSearchable && !_vm.isLocked && !_vm.isReadonly
+                ? _c(
+                    "search-input",
+                    {
+                      staticClass: "w-full",
+                      attrs: {
+                        "data-testid": _vm.field.resourceName + "-search-input",
+                        error: _vm.hasError,
+                        debounce: _vm.field.debounce,
+                        value: _vm.selectedResource,
+                        data: _vm.availableResources,
+                        clearable: _vm.field.nullable,
+                        trackBy: "value"
+                      },
+                      on: {
+                        input: _vm.performSearch,
+                        clear: _vm.clearSelection,
+                        selected: _vm.selectResource
+                      },
+                      scopedSlots: _vm._u(
+                        [
+                          {
+                            key: "option",
+                            fn: function(ref) {
+                              var option = ref.option
+                              var selected = ref.selected
+                              return _c(
+                                "div",
+                                { staticClass: "flex items-center" },
+                                [
+                                  option.avatar
+                                    ? _c("div", { staticClass: "mr-3" }, [
+                                        _c("img", {
+                                          staticClass:
+                                            "w-8 h-8 rounded-full block",
+                                          attrs: { src: option.avatar }
+                                        })
+                                      ])
+                                    : _vm._e(),
+                                  _vm._v(" "),
+                                  _c("div", [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "text-sm font-semibold leading-5 text-90",
+                                        class: { "text-white": selected }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n              " +
+                                            _vm._s(option.display) +
+                                            "\n            "
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _vm.field.withSubtitles
+                                      ? _c(
+                                          "div",
+                                          {
+                                            staticClass:
+                                              "mt-1 text-xs font-semibold leading-5 text-80",
+                                            class: { "text-white": selected }
+                                          },
+                                          [
+                                            option.subtitle
+                                              ? _c("span", [
+                                                  _vm._v(
+                                                    _vm._s(option.subtitle)
+                                                  )
+                                                ])
+                                              : _c("span", [
+                                                  _vm._v(
+                                                    _vm._s(
+                                                      _vm.__(
+                                                        "No additional information..."
+                                                      )
+                                                    )
+                                                  )
+                                                ])
+                                          ]
+                                        )
+                                      : _vm._e()
+                                  ])
+                                ]
+                              )
+                            }
+                          }
+                        ],
+                        null,
+                        false,
+                        956270040
+                      )
+                    },
+                    [
+                      _vm.selectedResource
+                        ? _c(
+                            "div",
+                            {
+                              staticClass: "flex items-center",
+                              attrs: { slot: "default" },
+                              slot: "default"
+                            },
+                            [
+                              _vm.selectedResource.avatar
+                                ? _c("div", { staticClass: "mr-3" }, [
+                                    _c("img", {
+                                      staticClass: "w-8 h-8 rounded-full block",
+                                      attrs: {
+                                        src: _vm.selectedResource.avatar
+                                      }
+                                    })
+                                  ])
+                                : _vm._e(),
+                              _vm._v(
+                                "\n\n          " +
+                                  _vm._s(_vm.selectedResource.display) +
+                                  "\n        "
+                              )
+                            ]
+                          )
+                        : _vm._e()
+                    ]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              !_vm.isSearchable || _vm.isLocked || _vm.isReadonly
+                ? _c(
+                    "select-control",
+                    {
+                      staticClass: "form-control form-select w-full",
+                      class: { "border-danger": _vm.hasError },
+                      attrs: {
+                        "data-testid": _vm.field.resourceName + "-select",
+                        dusk: _vm.field.attribute,
+                        disabled: _vm.isLocked || _vm.isReadonly,
+                        options: _vm.availableResources,
+                        value: _vm.selectedResourceId,
+                        selected: _vm.selectedResourceId,
+                        label: "display"
+                      },
+                      on: { change: _vm.selectResourceFromSelectControl }
+                    },
+                    [
+                      _c(
+                        "option",
+                        {
+                          attrs: {
+                            value: "",
+                            selected: "",
+                            disabled: !_vm.field.nullable
+                          }
+                        },
+                        [
+                          _vm._v(
+                            "\n          " +
+                              _vm._s(_vm.placeholder) +
+                              "\n        "
+                          )
+                        ]
+                      )
+                    ]
+                  )
+                : _vm._e(),
+              _vm._v(" "),
+              _vm.canShowNewRelationModal
+                ? _c("create-relation-button", {
+                    staticClass: "ml-1",
+                    attrs: { dusk: _vm.field.attribute + "-inline-create" },
+                    on: { click: _vm.openRelationModal }
+                  })
+                : _vm._e()
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "portal",
+            { attrs: { to: "modals", transition: "fade-transition" } },
+            [
+              _vm.relationModalOpen && _vm.canShowNewRelationModal
+                ? _c("create-relation-modal", {
+                    attrs: {
+                      "resource-name": _vm.field.resourceName,
+                      "resource-id": _vm.resourceId,
+                      "via-relationship": _vm.viaRelationship,
+                      "via-resource": _vm.viaResource,
+                      "via-resource-id": _vm.viaResourceId,
+                      width: "800"
+                    },
+                    on: {
+                      "set-resource": _vm.handleSetResource,
+                      "cancelled-create": _vm.closeRelationModal
+                    }
+                  })
+                : _vm._e()
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _vm.shouldShowTrashed
+            ? _c(
+                "div",
+                { staticClass: "mt-3" },
+                [
+                  _c(
+                    "checkbox-with-label",
+                    {
+                      attrs: {
+                        dusk: _vm.field.resourceName + "-with-trashed-checkbox",
+                        checked: _vm.withTrashed
+                      },
+                      on: { input: _vm.toggleWithTrashed }
+                    },
+                    [
+                      _vm._v(
+                        "\n        " +
+                          _vm._s(_vm.__("With Trashed")) +
+                          "\n      "
+                      )
+                    ]
+                  )
+                ],
+                1
+              )
+            : _vm._e()
+        ],
+        1
+      )
+    ],
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-68558949", module.exports)
+  }
+}
+
+/***/ }),
+/* 42 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(43)
+/* template */
+var __vue_template__ = __webpack_require__(44)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/listener-field/IndexField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-11d44cdb", Component.options)
+  } else {
+    hotAPI.reload("data-v-11d44cdb", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 43 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    props: ['resourceName', 'field']
+});
+
+/***/ }),
+/* 44 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("span", [_vm._v(_vm._s(_vm.field.value))])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-11d44cdb", module.exports)
+  }
+}
+
+/***/ }),
+/* 45 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(46)
+/* template */
+var __vue_template__ = __webpack_require__(47)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/listener-field/DetailField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7c3194b4", Component.options)
+  } else {
+    hotAPI.reload("data-v-7c3194b4", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 46 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ["resource", "resourceName", "resourceId", "field"]
+});
+
+/***/ }),
+/* 47 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("panel-item", { attrs: { field: _vm.field } })
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-7c3194b4", module.exports)
+  }
+}
+
+/***/ }),
+/* 48 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(49)
+}
+var normalizeComponent = __webpack_require__(0)
+/* script */
+var __vue_script__ = __webpack_require__(54)
+/* template */
+var __vue_template__ = __webpack_require__(55)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/listener-field/FormField.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-fbf1305a", Component.options)
+  } else {
+    hotAPI.reload("data-v-fbf1305a", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 49 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(50);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(52)("608a827e", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fbf1305a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./FormField.vue", function() {
+     var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-fbf1305a\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../node_modules/sass-loader/lib/loader.js!../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./FormField.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(51)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n@-webkit-keyframes rotating {\nfrom {\n    -webkit-transform: rotate(0deg);\n            transform: rotate(0deg);\n}\nto {\n    -webkit-transform: rotate(360deg);\n            transform: rotate(360deg);\n}\n}\n.rotating {\n  -webkit-animation: rotating 2s linear infinite;\n          animation: rotating 2s linear infinite;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function(useSourceMap) {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		return this.map(function (item) {
+			var content = cssWithMappingToString(item, useSourceMap);
+			if(item[2]) {
+				return "@media " + item[2] + "{" + content + "}";
+			} else {
+				return content;
+			}
+		}).join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+function cssWithMappingToString(item, useSourceMap) {
+	var content = item[1] || '';
+	var cssMapping = item[3];
+	if (!cssMapping) {
+		return content;
+	}
+
+	if (useSourceMap && typeof btoa === 'function') {
+		var sourceMapping = toComment(cssMapping);
+		var sourceURLs = cssMapping.sources.map(function (source) {
+			return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */'
+		});
+
+		return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
+	}
+
+	return [content].join('\n');
+}
+
+// Adapted from convert-source-map (MIT)
+function toComment(sourceMap) {
+	// eslint-disable-next-line no-undef
+	var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
+	var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
+
+	return '/*# ' + data + ' */';
+}
+
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+  Modified by Evan You @yyx990803
+*/
+
+var hasDocument = typeof document !== 'undefined'
+
+if (typeof DEBUG !== 'undefined' && DEBUG) {
+  if (!hasDocument) {
+    throw new Error(
+    'vue-style-loader cannot be used in a non-browser environment. ' +
+    "Use { target: 'node' } in your Webpack config to indicate a server-rendering environment."
+  ) }
+}
+
+var listToStyles = __webpack_require__(53)
+
+/*
+type StyleObject = {
+  id: number;
+  parts: Array<StyleObjectPart>
+}
+
+type StyleObjectPart = {
+  css: string;
+  media: string;
+  sourceMap: ?string
+}
+*/
+
+var stylesInDom = {/*
+  [id: number]: {
+    id: number,
+    refs: number,
+    parts: Array<(obj?: StyleObjectPart) => void>
+  }
+*/}
+
+var head = hasDocument && (document.head || document.getElementsByTagName('head')[0])
+var singletonElement = null
+var singletonCounter = 0
+var isProduction = false
+var noop = function () {}
+var options = null
+var ssrIdKey = 'data-vue-ssr-id'
+
+// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
+// tags it will allow on a page
+var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\b/.test(navigator.userAgent.toLowerCase())
+
+module.exports = function (parentId, list, _isProduction, _options) {
+  isProduction = _isProduction
+
+  options = _options || {}
+
+  var styles = listToStyles(parentId, list)
+  addStylesToDom(styles)
+
+  return function update (newList) {
+    var mayRemove = []
+    for (var i = 0; i < styles.length; i++) {
+      var item = styles[i]
+      var domStyle = stylesInDom[item.id]
+      domStyle.refs--
+      mayRemove.push(domStyle)
+    }
+    if (newList) {
+      styles = listToStyles(parentId, newList)
+      addStylesToDom(styles)
+    } else {
+      styles = []
+    }
+    for (var i = 0; i < mayRemove.length; i++) {
+      var domStyle = mayRemove[i]
+      if (domStyle.refs === 0) {
+        for (var j = 0; j < domStyle.parts.length; j++) {
+          domStyle.parts[j]()
+        }
+        delete stylesInDom[domStyle.id]
+      }
+    }
+  }
+}
+
+function addStylesToDom (styles /* Array<StyleObject> */) {
+  for (var i = 0; i < styles.length; i++) {
+    var item = styles[i]
+    var domStyle = stylesInDom[item.id]
+    if (domStyle) {
+      domStyle.refs++
+      for (var j = 0; j < domStyle.parts.length; j++) {
+        domStyle.parts[j](item.parts[j])
+      }
+      for (; j < item.parts.length; j++) {
+        domStyle.parts.push(addStyle(item.parts[j]))
+      }
+      if (domStyle.parts.length > item.parts.length) {
+        domStyle.parts.length = item.parts.length
+      }
+    } else {
+      var parts = []
+      for (var j = 0; j < item.parts.length; j++) {
+        parts.push(addStyle(item.parts[j]))
+      }
+      stylesInDom[item.id] = { id: item.id, refs: 1, parts: parts }
+    }
+  }
+}
+
+function createStyleElement () {
+  var styleElement = document.createElement('style')
+  styleElement.type = 'text/css'
+  head.appendChild(styleElement)
+  return styleElement
+}
+
+function addStyle (obj /* StyleObjectPart */) {
+  var update, remove
+  var styleElement = document.querySelector('style[' + ssrIdKey + '~="' + obj.id + '"]')
+
+  if (styleElement) {
+    if (isProduction) {
+      // has SSR styles and in production mode.
+      // simply do nothing.
+      return noop
+    } else {
+      // has SSR styles but in dev mode.
+      // for some reason Chrome can't handle source map in server-rendered
+      // style tags - source maps in <style> only works if the style tag is
+      // created and inserted dynamically. So we remove the server rendered
+      // styles and inject new ones.
+      styleElement.parentNode.removeChild(styleElement)
+    }
+  }
+
+  if (isOldIE) {
+    // use singleton mode for IE9.
+    var styleIndex = singletonCounter++
+    styleElement = singletonElement || (singletonElement = createStyleElement())
+    update = applyToSingletonTag.bind(null, styleElement, styleIndex, false)
+    remove = applyToSingletonTag.bind(null, styleElement, styleIndex, true)
+  } else {
+    // use multi-style-tag mode in all other cases
+    styleElement = createStyleElement()
+    update = applyToTag.bind(null, styleElement)
+    remove = function () {
+      styleElement.parentNode.removeChild(styleElement)
+    }
+  }
+
+  update(obj)
+
+  return function updateStyle (newObj /* StyleObjectPart */) {
+    if (newObj) {
+      if (newObj.css === obj.css &&
+          newObj.media === obj.media &&
+          newObj.sourceMap === obj.sourceMap) {
+        return
+      }
+      update(obj = newObj)
+    } else {
+      remove()
+    }
+  }
+}
+
+var replaceText = (function () {
+  var textStore = []
+
+  return function (index, replacement) {
+    textStore[index] = replacement
+    return textStore.filter(Boolean).join('\n')
+  }
+})()
+
+function applyToSingletonTag (styleElement, index, remove, obj) {
+  var css = remove ? '' : obj.css
+
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = replaceText(index, css)
+  } else {
+    var cssNode = document.createTextNode(css)
+    var childNodes = styleElement.childNodes
+    if (childNodes[index]) styleElement.removeChild(childNodes[index])
+    if (childNodes.length) {
+      styleElement.insertBefore(cssNode, childNodes[index])
+    } else {
+      styleElement.appendChild(cssNode)
+    }
+  }
+}
+
+function applyToTag (styleElement, obj) {
+  var css = obj.css
+  var media = obj.media
+  var sourceMap = obj.sourceMap
+
+  if (media) {
+    styleElement.setAttribute('media', media)
+  }
+  if (options.ssrId) {
+    styleElement.setAttribute(ssrIdKey, obj.id)
+  }
+
+  if (sourceMap) {
+    // https://developer.chrome.com/devtools/docs/javascript-debugging
+    // this makes source maps inside style tags work properly in Chrome
+    css += '\n/*# sourceURL=' + sourceMap.sources[0] + ' */'
+    // http://stackoverflow.com/a/26603875
+    css += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + ' */'
+  }
+
+  if (styleElement.styleSheet) {
+    styleElement.styleSheet.cssText = css
+  } else {
+    while (styleElement.firstChild) {
+      styleElement.removeChild(styleElement.firstChild)
+    }
+    styleElement.appendChild(document.createTextNode(css))
+  }
+}
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports) {
+
+/**
+ * Translates the list format produced by css-loader into something
+ * easier to manipulate.
+ */
+module.exports = function listToStyles (parentId, list) {
+  var styles = []
+  var newStyles = {}
+  for (var i = 0; i < list.length; i++) {
+    var item = list[i]
+    var id = item[0]
+    var css = item[1]
+    var media = item[2]
+    var sourceMap = item[3]
+    var part = {
+      id: parentId + ':' + i,
+      css: css,
+      media: media,
+      sourceMap: sourceMap
+    }
+    if (!newStyles[id]) {
+      styles.push(newStyles[id] = { id: id, parts: [part] })
+    } else {
+      newStyles[id].parts.push(part)
+    }
+  }
+  return styles
+}
+
+
+/***/ }),
+/* 54 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_laravel_nova___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_laravel_nova__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_lodash___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_lodash__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_numeral__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_numeral___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_numeral__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mixins: [__WEBPACK_IMPORTED_MODULE_0_laravel_nova__["FormField"], __WEBPACK_IMPORTED_MODULE_0_laravel_nova__["HandlesValidationErrors"]],
+
+  props: ["resourceName", "resourceId", "field"],
+
+  created: function created() {
+    Nova.$on(this.field.listensTo, this.messageReceived);
+    this.field_values["resourceId"] = parseInt(this.resourceId);
+  },
+
+
+  data: function data() {
+    return {
+      calculating: false,
+      field_values: {}
+    };
+  },
+
+  methods: {
+    messageReceived: function messageReceived(message) {
+      this.field_values[message.field_name] = message.value;
+      this.calculateValue();
+    },
+    setFieldAndMessage: function setFieldAndMessage(el) {
+      var rawValue = el.target.value;
+      var parsedValue = rawValue;
+
+      if (this.field.type === "number") {
+        parsedValue = Number(rawValue);
+      }
+
+      Nova.$emit(this.field.broadcastTo, {
+        field_name: this.field.attribute,
+        value: parsedValue
+      });
+
+      this.value = parsedValue;
+    },
+
+
+    calculateValue: __WEBPACK_IMPORTED_MODULE_1_lodash___default.a.debounce(function () {
+      var _this = this;
+
+      this.calculating = true;
+
+      Nova.request().post("/scops/calculated-field/calculate/" + this.resourceName + "/" + this.field.attribute, this.field_values).then(function (response) {
+        _this.value = response.data.value;
+        _this.calculating = false;
+      }).catch(function () {
+        _this.calculating = false;
+      });
+    }, 500),
+
+    /*
+     * Set the initial, internal value for the field.
+     */
+    setInitialValue: function setInitialValue() {
+      this.value = this.field.value || "";
+    },
+
+
+    /**
+     * Fill the given FormData object with the field's internal value.
+     */
+    fill: function fill(formData) {
+      formData.append(this.field.attribute, this.value || "");
+    },
+
+
+    /**
+     * Update the field's internal value.
+     */
+    handleChange: function handleChange(value) {
+      this.value = value;
+    }
+  },
+  filters: {
+    moneyFormat: function moneyFormat(number, format) {
+      if (!format) {
+        return number;
+      }
+      return __WEBPACK_IMPORTED_MODULE_2_numeral___default()(number).format(format);
+    }
+  }
+});
+
+/***/ }),
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -46412,7 +47923,7 @@ if (false) {
 }
 
 /***/ }),
-/* 40 */
+/* 56 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

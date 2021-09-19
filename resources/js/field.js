@@ -11,8 +11,12 @@ Nova.booting((Vue, router, store) => {
     Vue.component('detail-broadcaster-number-field', require('./components/broadcaster-number-field/DetailField'));
     Vue.component('form-broadcaster-number-field', require('./components/broadcaster-number-field/FormField'));
 
+    Vue.component('index-broadcaster-select-field', require('./components/broadcaster-select-field/IndexField'));
+    Vue.component('detail-broadcaster-select-field', require('./components/broadcaster-select-field/DetailField'));
     Vue.component('form-broadcaster-select-field', require('./components/broadcaster-select-field/FormField'));
     
+    Vue.component('index-broadcaster-belongsto-field', require('./components/broadcaster-belongsto-field/IndexField'));
+    Vue.component('detail-broadcaster-belongsto-field', require('./components/broadcaster-belongsto-field/DetailField'));
     Vue.component('form-broadcaster-belongsto-field', require('./components/broadcaster-belongsto-field/FormField'));
     
     Vue.component('index-listener-field', require('./components/listener-field/IndexField'));
