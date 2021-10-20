@@ -23,6 +23,13 @@ export default {
 
   props: ["resourceName", "resourceId", "field"],
 
+  created() {
+    Nova.$on(this.field.listensTo, this.messageReceived);
+    //this.field_values["resourceId"] = parseInt(this.resourceId);
+    this.$store.registerModule('calculatedField', {
+        calculatedField
+    });
+  },
   methods: {
     setFieldAndMessage(el) {
       const rawValue = el.target.value;

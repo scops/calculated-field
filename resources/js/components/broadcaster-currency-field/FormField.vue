@@ -35,6 +35,27 @@
 import { FormField, HandlesValidationErrors } from "laravel-nova";
 import numeral from "numeral";
 
+//import bank from '../storage/bank.js';
+
+const calculatedField = {
+  state: () => ({
+    count: 0
+  }),
+  mutations: {
+    increment (state) {
+      // `state` is the local module state
+      state.count++
+    }
+  },
+
+  getters: {
+    doubleCount (state) {
+      return state.count * 2
+    }
+  }
+}
+
+
 export default {
   mixins: [FormField, HandlesValidationErrors],
 
@@ -42,12 +63,22 @@ export default {
 
   created() {
     Nova.$on(this.field.listensTo, this.messageReceived);
-    this.field_values["resourceId"] = parseInt(this.resourceId);
-  },
+    
+    this.$store.registerModule('calculatedField', {
+        calculatedField
+    });
 
+  },
+  mounted() {
+
+    this.$store.state.calculatedField[this.field.attribute] = this.value;
+    this.field_values = this.$store.state.calculatedField;
+    //console.log(this.field_values)
+  },
   data: () => ({
     calculating: false,
-    field_values: {}
+    field_values: {},
+    amount: 0
   }),
 
   computed: {
@@ -74,7 +105,15 @@ export default {
       }
     },
   },
+  watch: {
+         // whenever a day changes, this function will run
+        amount: function (newValue) {
+            //console.log(`Monday: ${newValue}`)
+            this.$store.state.calculatedField[this.field.attribute] = newValue;
 
+            //console.log(this.$store.state.calculatedField);
+        },
+    },
   methods: {
 
     messageReceived(message) {
@@ -84,6 +123,7 @@ export default {
 
 
     setFieldAndMessage(el) {
+
       const rawValue = el.target.value;
       let parsedValue = rawValue;
 
@@ -95,11 +135,14 @@ export default {
         field_name: this.field.attribute,
         value: parsedValue
       });
-
+      this.amount = parsedValue;
       this.value = parsedValue;
     },
 
     calculateValue: _.debounce(function() {
+        console.log('calculateValue');
+
+        console.log(this.field_values);
       this.calculating = true;
 
       Nova.request()
@@ -122,6 +165,7 @@ export default {
           this.calculating = false;
         });
     }, 500),
+
     /*
      * Set the initial, internal value for the field.
      */
@@ -141,7 +185,8 @@ export default {
      */
     handleChange(value) {
       this.value = value;
-    }
+    },
+
   },
   filters: {
     moneyFormat(number, format) {

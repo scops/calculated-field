@@ -143,13 +143,22 @@ export default {
     relationModalOpen: false,
   }),
 
+  created() {
+        
+    this.$store.registerModule('calculatedField', {
+        calculatedField
+    });
+  },
   /**
    * Mount the component.
    */
   mounted() {
     this.initializeComponent()
-  },
 
+    this.$store.state.calculatedField[this.field.attribute] = this.selectedResourceId;
+    this.field_values = this.$store.state.calculatedField;
+    console.log(this.field_values)
+  },
   methods: {
     initializeComponent() {
       this.withTrashed = false

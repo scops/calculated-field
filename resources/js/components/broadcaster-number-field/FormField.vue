@@ -25,9 +25,16 @@ export default {
 
   created() {
     Nova.$on(this.field.listensTo, this.messageReceived);
-    this.field_values["resourceId"] = parseInt(this.resourceId);
+    
+    this.$store.registerModule('calculatedField', {
+        calculatedField
+    });
   },
+  mounted() {
 
+    this.$store.state.calculatedField[this.field.attribute] = this.value;
+    this.field_values = this.$store.state.calculatedField;
+  },
   data: () => ({
     calculating: false,
     field_values: {}

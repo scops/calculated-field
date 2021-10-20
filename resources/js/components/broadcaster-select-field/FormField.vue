@@ -67,8 +67,16 @@ export default {
         v => v.value == this.field.value
       )
     }
+    this.$store.registerModule('calculatedField', {
+        calculatedField
+    });
   },
+  mounted() {
 
+    this.$store.state.calculatedField[this.field.attribute] = this.selectedOption.value;
+    this.field_values = this.$store.state.calculatedField;
+
+  },
   methods: {
     /**
      * Provide a function that fills a passed FormData object with the
