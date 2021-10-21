@@ -113,6 +113,7 @@
 <script>
 import _ from 'lodash'
 import storage from '../../storage/BelongsToFieldStorage'
+import calculatedField from '../../storage/calculatedField'
 import {
   FormField,
   TogglesTrashed,

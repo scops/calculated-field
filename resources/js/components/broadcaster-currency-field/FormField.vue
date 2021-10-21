@@ -34,27 +34,7 @@
 <script>
 import { FormField, HandlesValidationErrors } from "laravel-nova";
 import numeral from "numeral";
-
-//import bank from '../storage/bank.js';
-
-const calculatedField = {
-  state: () => ({
-    count: 0
-  }),
-  mutations: {
-    increment (state) {
-      // `state` is the local module state
-      state.count++
-    }
-  },
-
-  getters: {
-    doubleCount (state) {
-      return state.count * 2
-    }
-  }
-}
-
+import calculatedField from '../../storage/calculatedField'
 
 export default {
   mixins: [FormField, HandlesValidationErrors],

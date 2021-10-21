@@ -52,6 +52,7 @@
 
 <script>
 import { FormField, HandlesValidationErrors } from 'laravel-nova'
+import calculatedField from '../../storage/calculatedField'
 
 export default {
   mixins: [HandlesValidationErrors, FormField],

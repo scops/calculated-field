@@ -17,6 +17,7 @@
 <script>
 import { FormField, HandlesValidationErrors } from "laravel-nova";
 import numeral from "numeral";
+import calculatedField from '../../storage/calculatedField'
 
 export default {
   mixins: [FormField, HandlesValidationErrors],
