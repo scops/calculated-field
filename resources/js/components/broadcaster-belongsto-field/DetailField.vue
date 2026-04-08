@@ -1,6 +1,6 @@
 <template>
   <panel-item :field="field">
-    <template slot="value">
+    <template #value>
       <router-link
         v-if="field.viewable && field.value"
         :to="{
