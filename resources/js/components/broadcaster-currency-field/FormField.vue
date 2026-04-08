@@ -98,7 +98,7 @@ export default {
         })
         .catch(() => { this.calculating = false; });
     }, 500),
-    setInitialValue() { this.value = this.field.value || ""; },
+    setInitialValue() { this.value = this.field.value ?? ""; },
     fill(formData) { formData.append(this.field.attribute, this.value || ""); },
     handleChange(value) { this.value = value; },
     moneyFormat(number, format) {

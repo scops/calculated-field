@@ -35,7 +35,7 @@ export default {
       this.value = parsedValue;
     },
     setInitialValue() {
-      this.value = this.field.value || "";
+      this.value = this.field.value ?? "";
     },
     fill(formData) {
       formData.append(this.field.attribute, this.value || "");
