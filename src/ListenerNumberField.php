@@ -79,7 +79,7 @@ class ListenerNumberField extends Number
      * Serialize the field to JSON
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
         return array_merge([
             'listensTo' => $this->listensTo

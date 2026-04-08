@@ -81,7 +81,7 @@ class ListenerField extends Field
      * Serialize the field to JSON
      * @return array
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): array
     {
         return array_merge([
             'listensTo' => $this->listensTo

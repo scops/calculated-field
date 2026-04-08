@@ -7,6 +7,13 @@ For a detailed write-up of the how-and-why of this field, please visit original 
 
 https://codebykyle.com/blog/laravel-nova-custom-calculated-field
 
+## Requirements
+
+- PHP >= 8.0
+- Laravel Nova 4
+
+For Nova 3 support, use the `nova3` branch.
+
 ## Installation
 
 Install the package via composer:
