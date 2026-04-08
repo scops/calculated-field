@@ -35,6 +35,13 @@ export default {
       )
     }
   },
+  mounted() {
+    Nova.$emit(this.field.broadcastTo, {
+      field_name: this.field.attribute,
+      value: this.value,
+      _initializing: true
+    });
+  },
   methods: {
     fill(formData) {
       formData.append(this.field.attribute, this.value)

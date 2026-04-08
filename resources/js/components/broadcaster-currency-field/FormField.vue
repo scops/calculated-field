@@ -35,11 +35,19 @@ export default {
   created() {
     Nova.$on(this.field.listensTo, this.messageReceived);
   },
+  mounted() {
+    Nova.$emit(this.field.broadcastTo, {
+      field_name: this.field.attribute,
+      value: this.value,
+      _initializing: true
+    });
+  },
   beforeUnmount() {
     Nova.$off(this.field.listensTo, this.messageReceived);
   },
   data: () => ({
     calculating: false,
+    initialized: false,
     field_values: {},
     amount: 0
   }),
@@ -66,7 +74,12 @@ export default {
   methods: {
     messageReceived(message) {
       this.field_values[message.field_name] = message.value;
-      this.calculateValue();
+      if (!message._initializing) {
+        this.initialized = true;
+      }
+      if (this.initialized) {
+        this.calculateValue();
+      }
     },
     setFieldAndMessage(el) {
       const rawValue = el.target.value;
@@ -99,7 +112,7 @@ export default {
         .catch(() => { this.calculating = false; });
     }, 500),
     setInitialValue() { this.value = this.field.value ?? ""; },
-    fill(formData) { formData.append(this.field.attribute, this.value || ""); },
+    fill(formData) { formData.append(this.field.attribute, this.value ?? ""); },
     handleChange(value) { this.value = value; },
     moneyFormat(number, format) {
       if (!format) return number;

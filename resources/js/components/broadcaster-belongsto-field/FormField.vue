@@ -47,8 +47,16 @@ export default {
   },
 
   mounted() {
-    // Don't emit on mount — it triggers recalculation and overwrites saved values on edit.
-    // Only emit on user interaction via @field-changed → handleFieldChanged.
+    this.$nextTick(() => {
+      const inner = this.$refs.belongsToField;
+      if (inner && inner.selectedResourceId) {
+        Nova.$emit(this.field.broadcastTo, {
+          field_name: this.field.attribute,
+          value: inner.selectedResourceId,
+          _initializing: true
+        });
+      }
+    });
   }
 };
 </script>

@@ -21,6 +21,13 @@ import numeral from "numeral";
 export default {
   mixins: [FormField, HandlesValidationErrors],
   props: ["resourceName", "resourceId", "field"],
+  mounted() {
+    Nova.$emit(this.field.broadcastTo, {
+      field_name: this.field.attribute,
+      value: this.value,
+      _initializing: true
+    });
+  },
   methods: {
     setFieldAndMessage(el) {
       const rawValue = el.target.value;
